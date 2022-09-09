@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="author" content="Tissan Mae Taoil">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8">
+
+  <link rel="stylesheet" href="styles/bootstraptheme.css"> 
+ 
+    <title>Bootstrap themes - activity4</title>
+</head>
+<body>
+
+<div class="container">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="images/log.jpg"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item active">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">SIT</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="bsit.html">BSIT</a></li>
+                      <li><a class="dropdown-item" href="bscpe.html">BSCPE</a></li>
+                      <li><a class="dropdown-item" href="bscs.html">BSCS</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <!--------REGISTRATION FORM-->
+<button class="btn btn-primary btn-lg "data-bs-toggle="modal" href="#" data-bs-target="#registermodal">Register</button>
+        
+<div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+    <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+            <a class="nav-link " data-bs-toggle="modal" href="#" data-bs-target="#registermodal">
+                Login
+             </a>
+        </li>
+    </ul>
+</div>
+
+<div class="modal fade" id="registermodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+              <form>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Student ID</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <small id="emailHelp" class="form-text text-muted">Enter your school ID number</small>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Full Name</label>
+                    <input type="text" class="form-control" id="exampleInputPassword1">
+                    <br>
+                  <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                          <label class="btn btn-primary active">
+                            <input type="radio" name="options" id="option1" autocomplete="off" checked=""> BSCS
+                          </label>
+                          <label class="btn btn-primary">
+                            <input type="radio" name="options" id="option2" autocomplete="off"> BSCpE
+                          </label>
+                          <label class="btn btn-primary">
+                            <input type="radio" name="options" id="option3" autocomplete="off"> BSIT
+                          </label>
+                        </div><br><br>
+                        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                              <label class="btn btn-primary active">
+                                <input type="radio" name="options" id="option1" autocomplete="off" checked=""> 1st
+                              </label>
+                              <label class="btn btn-primary">
+                                <input type="radio" name="options" id="option2" autocomplete="off"> 2nd
+                              </label>
+                              <label class="btn btn-primary">
+                                <input type="radio" name="options" id="option3" autocomplete="off"> 3rd
+                              </label>
+                              <label class="btn btn-primary">
+                                      <input type="radio" name="options" id="option3" autocomplete="off"> 4th
+                                    </label>
+                            </div><br><br>
+                  <button type="submit" class="btn btn-primary">Login</button>
+                </form>
+          </div>
+        </div>
+      </div>
+    </div>
+            <!-- Modal Trigger -->
+            <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal">LOGIN</a>
+            </li>
+
+          </ul>
+          <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <!-- login form-->
+                    <form>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Email address</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">Password</label>
+                          <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                      </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+  <!-----------ROW 1---------->
+  <div class="row">
+    <!--HEADER-->
+    <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" style="border:15px  solid #493D26;" >
+      <div class="header col">Header</div>
+    </div>
+
+    <div class="col-12 col-xs-4 col-sm-4 col-md-8 col-lg-4 col-xl-4" style="border:15px solid#493D26;">
+      <div class="r2c1 col">Row 2 Column 1</div>
+    </div>
+
+    <div class="col-12 col-xs-4 col-sm-8 col-md-4 col-lg-4 col-xl-4" style="border:15px solid #493D26;">
+      <div class="r2c2r1 col">Row 2 Column 2 R1</div>
+      <div class="r2c2r2 col">Row 2 Column 2 R2</div>
+    </div>
+
+    <div class="col-12 col-xs-4 col-sm-12 col-md-12 col-lg-4 col-xl-4" style="border:15px solid #493D26; text-align:center;">
+      <div class="r2c3 col">Row 2 Column 3</div>
+    </div>
+    <!--end of container and row-->    
+  </div>
+</div>
+
+<!--CONTAINER-->
+<div class="container">
+  <!--SECOND ROW-->
+  <div class="row">
+    <!--FOOTER-->
+    <div class="col-12 col-xs-4 col-sm-4 col-md-6 col-lg-4 col-xl-4" style="border:15px solid #493D26;">
+      <div class="foot1 col">
+        <!--CARD----->
+        <div class="card" style="width: 18rem;">
+        <img src="images/log.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div></div>
+    </div>
+
+    <div class="col-12 col-xs-4 col-sm-4 col-md-6 col-lg-4 col-xl-4" style="border:15px solid #493D26;">
+      <div class="foot2  col">
+        <!--CARD----->
+        <div class="card" style="width: 20rem;">
+            <div class="card-body">
+              <h5 class="card-title">Special title treatment</h5>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-components.html">Go somewhere</a>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-xs-4 col-sm-4 col-md-12 col-lg-4 col-xl-4" style="border:15px solid #493D26; text-align: center;">
+      <div class="foot3 col">
+        <!--CARD----->
+        <div class="card">
+            <div class="card-header">
+              Featured
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Special title treatment</h5>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--LINKS-->      
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>   
+</body>
+</html>
